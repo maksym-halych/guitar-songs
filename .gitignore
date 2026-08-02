@@ -1,0 +1,12 @@
+# Obsidian per-machine state — config itself is tracked
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Third-party plugin code — reinstallable. Keep each plugin's settings.
+.obsidian/plugins/*/*
+!.obsidian/plugins/*/data.json
+!.obsidian/plugins/*/manifest.json
+
+.DS_Store

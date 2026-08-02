@@ -1,0 +1,12 @@
+/* Chord charts: keep monospace blocks tight and scrollable, not wrapped. */
+.markdown-preview-view pre > code,
+.markdown-source-view .HyperMD-codeblock {
+  font-size: 0.9em;
+  line-height: 1.35;
+  white-space: pre;
+  tab-size: 4;
+}
+
+.markdown-preview-view pre {
+  overflow-x: auto;
+}

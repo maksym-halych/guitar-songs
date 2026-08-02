@@ -1,0 +1,7 @@
+{
+  "theme": "obsidian",
+  "monospaceFontFamily": "JetBrains Mono, Fira Code, monospace",
+  "enabledCssSnippets": [
+    "chord-charts"
+  ]
+}
