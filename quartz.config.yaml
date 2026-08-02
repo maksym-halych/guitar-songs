@@ -120,8 +120,6 @@ plugins:
     enabled: true
   - source: "@quartz-community/og-image"
     enabled: true
-  # Off: this is a project page (user.github.io/guitar-songs), not a custom
-  # domain. An emitted CNAME would try to claim galychmaks.github.io itself.
   - source: "@quartz-community/cname"
     enabled: false
   - source: "@quartz-community/canvas-page"
@@ -258,6 +256,10 @@ plugins:
       position: afterBody
       priority: 50
       display: all
+  - source: ./plugins/chord-highlight
+    enabled: true
+    options: {}
+    order: 95
 layout:
   groups:
     toolbar:

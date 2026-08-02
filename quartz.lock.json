@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "chord-highlight": {
+      "source": "./plugins/chord-highlight",
+      "resolved": "/home/max/projects/personal/guitar-chords/plugins/chord-highlight",
+      "commit": "local",
+      "installedAt": "2026-08-02T17:57:14.396Z"
+    }
+  }
+}

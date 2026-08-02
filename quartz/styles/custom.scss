@@ -1,3 +1,19 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Chord charts. Colors match the Dynamic Highlights setup used in Obsidian
+// (content/.obsidian/plugins/another-dynamic-highlights/data.json) so the site
+// and the editor look the same. Classes come from plugins/chord-highlight.
+// The inner `span` selectors are load-bearing: shiki emits
+// `code[data-theme*=" "] span { color: var(--shiki-light) }`, which sets a
+// color on the innermost span and would otherwise beat an inherited one.
+code[data-language="text"] .chord-line,
+code[data-language="text"] .chord-line span {
+  color: #e0af68;
+  font-weight: 400;
+}
+
+code[data-language="text"] .song-section,
+code[data-language="text"] .song-section span {
+  color: #7aa2f7;
+  font-weight: 600;
+}

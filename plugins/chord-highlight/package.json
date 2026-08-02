@@ -1,0 +1,26 @@
+{
+  "name": "quartz-plugin-chord-highlight",
+  "version": "1.0.0",
+  "description": "Colors chord lines and [section] headers in chord-chart code blocks",
+  "type": "module",
+  "license": "MIT",
+  "main": "./index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "chord-highlight",
+    "displayName": "Chord Highlight",
+    "description": "Adds classes to chord lines and [section] headers inside code blocks",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "dependencies": [],
+    "defaultOrder": 95,
+    "defaultEnabled": true,
+    "defaultOptions": {}
+  }
+}
