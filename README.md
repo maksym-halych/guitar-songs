@@ -2,14 +2,20 @@
 
 An [Obsidian](https://obsidian.md) vault of chord charts for my favorite songs.
 
-Open this folder as a vault in Obsidian, then start at **[Songs index](Songs%20index.md)**.
+Open the **`content/`** folder as a vault in Obsidian, then start at
+**[index](content/index.md)**. The vault is also published to
+[galychmaks.github.io/guitar-songs](https://galychmaks.github.io/guitar-songs)
+with [Quartz](https://quartz.jzhao.xyz) — see [Publishing](#publishing).
 
 ```
 .
-├── Songs index.md      entry point
-├── Songs/              one note per song
-├── Templates/          Song.md — new-song template
-└── .obsidian/          vault config (committed on purpose)
+├── content/            the Obsidian vault — open THIS in Obsidian
+│   ├── index.md        entry point, and the site homepage
+│   ├── Songs/          one note per song
+│   ├── Templates/      Song.md — new-song template (not published)
+│   └── .obsidian/      vault config (committed on purpose)
+├── quartz/             Quartz static-site generator
+└── quartz.config.yaml  site config
 ```
 
 ## Conventions
@@ -49,4 +55,20 @@ Two things beyond stock Obsidian:
 
 Command palette → *Insert template* → `Song`, then fill in the frontmatter and
 paste the chart. Name the file `Artist - Title` and add it to
-[Songs index](Songs%20index.md).
+[index](content/index.md).
+
+## Publishing
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the
+vault with Quartz and deploys `public/` to GitHub Pages. Requires
+**Settings → Pages → Source: GitHub Actions** on the repo.
+
+To preview locally:
+
+```sh
+npm ci
+npx quartz build --serve   # http://localhost:8080
+```
+
+Only `content/` is published. `Templates/` and `.obsidian/` are excluded via
+`ignorePatterns` in `quartz.config.yaml`.

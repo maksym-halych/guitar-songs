@@ -1,12 +1,20 @@
 # Obsidian per-machine state — config itself is tracked
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
-.trash/
+content/.obsidian/workspace.json
+content/.obsidian/workspace-mobile.json
+content/.obsidian/cache
+content/.trash/
 
 # Third-party plugin code — reinstallable. Keep each plugin's settings.
-.obsidian/plugins/*/*
-!.obsidian/plugins/*/data.json
-!.obsidian/plugins/*/manifest.json
+content/.obsidian/plugins/*/*
+!content/.obsidian/plugins/*/data.json
+!content/.obsidian/plugins/*/manifest.json
+
+# Quartz build artifacts
+node_modules/
+public/
+.quartz/
+.quartz-cache/
+tsconfig.tsbuildinfo
+prof/
 
 .DS_Store
