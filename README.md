@@ -1,13 +1,13 @@
 # Guitar Chords
 
-[![Read online](https://img.shields.io/badge/read%20online-guitar--songs-7AA2F7?style=flat-square&logo=github)](https://galychmaks.github.io/guitar-songs)
-[![Deploy](https://img.shields.io/github/actions/workflow/status/GalychMaks/guitar-songs/deploy.yml?branch=main&style=flat-square&label=deploy)](https://github.com/GalychMaks/guitar-songs/actions/workflows/deploy.yml)
+[![Read online](https://img.shields.io/badge/read%20online-guitar--songs-7AA2F7?style=flat-square&logo=github)](https://maksym-halych.github.io/guitar-songs)
+[![Deploy](https://img.shields.io/github/actions/workflow/status/maksym-halych/guitar-songs/deploy.yml?branch=main&style=flat-square&label=deploy)](https://github.com/maksym-halych/guitar-songs/actions/workflows/deploy.yml)
 
 An [Obsidian](https://obsidian.md) vault of chord charts for my favorite songs.
 
 Open the **`content/`** folder as a vault in Obsidian, then start at
 **[index](content/index.md)**. The vault is also published to
-[galychmaks.github.io/guitar-songs](https://galychmaks.github.io/guitar-songs)
+[maksym-halych.github.io/guitar-songs](https://maksym-halych.github.io/guitar-songs)
 with [Quartz](https://quartz.jzhao.xyz) — see [Publishing](#publishing).
 
 ```

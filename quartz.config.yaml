@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: en-US
-  baseUrl: galychmaks.github.io/guitar-songs
+  baseUrl: maksym-halych.github.io/guitar-songs
   ignorePatterns:
     - private
     - Templates
@@ -203,7 +203,7 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/GalychMaks/guitar-songs
+        GitHub: https://github.com/maksym-halych/guitar-songs
     layout:
       position: footer
       priority: 50
